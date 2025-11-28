@@ -35,6 +35,26 @@ Este repositório contém configurações de teste para integração de sistemas
   - Setup de rede PROFIBUS
   - Parâmetros de aquisição analógica
 
+### S7_Pro5
+**Configuração de teste: Saídas Analógicas com Calibração**
+
+- **Objetivo:** Teste e calibração de saídas analógicas
+- **CLP:** SIEMENS S7-300 CPU 315-2DP
+- **Módulo:** 332-5HF00-0AB0 - Módulo de saída analógica
+- **Protocolo:** PROFIBUS-DP
+- **Calibração com valores fixos de tensão:**
+  - +10V: PQW256 (27648 DEC / 0x6C00 HEX)
+  - +5V: PQW258 (13824 DEC / 0x3600 HEX)
+  - 0V: PQW260 (0 DEC / 0x0000 HEX)
+  - -5V: PQW262 (-13824 DEC / 0xC9C0 HEX)
+  - -10V: PQW264 (-27648 DEC / 0x9400 HEX)
+  - Duplicação de valores em PQW266-PQW270 para múltiplos canais
+- **Inclui:**
+  - Configuração de saídas analógicas
+  - Tabela de variáveis de calibração
+  - Setup de rede PROFIBUS
+  - Parâmetros para testes de integração
+
 ## 🔧 Tecnologias
 
 - **Software:** SIMATIC STEP 7 v5.7
@@ -42,7 +62,7 @@ Este repositório contém configurações de teste para integração de sistemas
   - Siemens S7-300 (CPU 315-2DP)
   - Sinamics S120 CU310
   - ET200 (153-2BA02-0XB0)
-  - Módulo 331-1KF01-0AB0
+  - Módulos 331-1KF01-0AB0 (entrada) e 332-5HF00-0AB0 (saída)
 - **Protocolo:** PROFIBUS-DP
 
 ## 🚀 Como Usar
@@ -70,4 +90,4 @@ Este projeto está sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para d
 
 ---
 
-*Última atualização: 27 de novembro de 2025*
+*Última atualização: 28 de novembro de 2025*
