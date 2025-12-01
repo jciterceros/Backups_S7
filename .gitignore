@@ -1,0 +1,32 @@
+# Ignore everything
+/*
+
+# But do not ignore these monitored projects/files
+!/.gitignore
+!/README.md
+!/LICENSE
+!/MX_CPU_2/
+!/MX_CPU_2/**
+!/S7_Pro4/
+!/S7_Pro4/**
+!/S7_Pro5/
+!/S7_Pro5/**
+!/S7_Pro6/
+!/S7_Pro6/**
+!/S7_Pro7/
+!/S7_Pro7/**
+!/S7_Pro8/
+!/S7_Pro8/**
+
+# Keep Git metadata
+!.git/
+
+# Optional: ignore system files
+Thumbs.db
+.DS_Store
+
+# Ignore temporary Step7/Windows temp files
+~* 
+*.tmp
+
+# End of file
