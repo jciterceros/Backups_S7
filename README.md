@@ -88,6 +88,23 @@ Este repositório contém configurações de teste para integração de sistemas
   - Parâmetros de detecção de entrada
   - Monitoramento simultâneo de múltiplos canais
 
+### S7_Pro8
+**Configuração de teste: Saídas Digitais com Acionamento 24V**
+
+- **Objetivo:** Acionamento e controle de sinais digitais
+- **CLP:** SIEMENS S7-300 CPU 315-2DP
+- **Módulo:** 322-1BL00-0AA0 - Módulo de saída digital (32 canais)
+- **Sinais de teste:** 24V DC forçados nas saídas
+- **Controle de 32 saídas digitais:**
+  - Byte Q0: Q0.0 a Q0.7
+  - Byte Q1: Q1.0 a Q1.7
+  - Byte Q2: Q2.0 a Q2.7
+  - Byte Q3: Q3.0 a Q3.7
+- **Inclui:**
+  - Configuração de saída digital
+  - Parâmetros de controle de saída
+  - Acionamento simultâneo de múltiplos canais
+
 ## 🔧 Tecnologias
 
 - **Software:** SIMATIC STEP 7 v5.7
@@ -95,7 +112,7 @@ Este repositório contém configurações de teste para integração de sistemas
   - Siemens S7-300 (CPU 315-2DP)
   - Sinamics S120 CU310
   - ET200 (153-2BA02-0XB0)
-  - Módulos: 331-1KF01-0AB0 (entrada analógica), 332-5HF00-0AB0 (saída analógica), 6ES7331-7KF02-0AB0 (entrada analógica mista) e 321-1BL00-0AA0 (entrada digital)
+  - Módulos: 331-1KF01-0AB0 (entrada analógica), 332-5HF00-0AB0 (saída analógica), 6ES7331-7KF02-0AB0 (entrada analógica mista), 321-1BL00-0AA0 (entrada digital) e 322-1BL00-0AA0 (saída digital)
 - **Protocolo:** PROFIBUS-DP
 
 ## 🚀 Como Usar
