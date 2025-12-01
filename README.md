@@ -71,6 +71,23 @@ Este repositório contém configurações de teste para integração de sistemas
   - Setup de rede PROFIBUS
   - Suporte para medições simultâneas de tensão e corrente
 
+### S7_Pro7
+**Configuração de teste: Entradas Digitais com Monitoramento 24V**
+
+- **Objetivo:** Aquisição e monitoramento de sinais digitais
+- **CLP:** SIEMENS S7-300 CPU 315-2DP
+- **Módulo:** 321-1BL00-0AA0 - Módulo de entrada digital (32 canais)
+- **Sinais de teste:** 24V DC
+- **Monitoramento de 32 entradas digitais:**
+  - Byte I0: I0.0 a I0.7
+  - Byte I1: I1.0 a I1.7
+  - Byte I2: I2.0 a I2.7
+  - Byte I3: I3.0 a I3.7
+- **Inclui:**
+  - Configuração de entrada digital
+  - Parâmetros de detecção de entrada
+  - Monitoramento simultâneo de múltiplos canais
+
 ## 🔧 Tecnologias
 
 - **Software:** SIMATIC STEP 7 v5.7
@@ -78,7 +95,7 @@ Este repositório contém configurações de teste para integração de sistemas
   - Siemens S7-300 (CPU 315-2DP)
   - Sinamics S120 CU310
   - ET200 (153-2BA02-0XB0)
-  - Módulos 331-1KF01-0AB0 (entrada), 332-5HF00-0AB0 (saída) e 6ES7331-7KF02-0AB0 (entrada mista)
+  - Módulos: 331-1KF01-0AB0 (entrada analógica), 332-5HF00-0AB0 (saída analógica), 6ES7331-7KF02-0AB0 (entrada analógica mista) e 321-1BL00-0AA0 (entrada digital)
 - **Protocolo:** PROFIBUS-DP
 
 ## 🚀 Como Usar
